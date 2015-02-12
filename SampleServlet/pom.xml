@@ -76,18 +76,6 @@
 				</executions>
 			</plugin>
 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<version>2.9</version>
-				<configuration>
-					<!-- <wtpversion>2.0</wtpversion> -->
-					<additionalProjectFacets>
-						<jst.web>3.1</jst.web>
-						<java>1.7</java>
-					</additionalProjectFacets>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 </project>
