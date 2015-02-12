@@ -1,0 +1,24 @@
+Instructions:
+
+In order to get these Eclipse Projects up and running (presummably having checked everything out), you have to run the eclipse goal per project like SampleApplication for example:
+cd SampleApplication
+mvn eclipse:eclipse
+
+Once that's done, open eclipse pointing at the eejava workspace location... e.g: /work/eejava
+
+If you have checkout out eejava into a working eclipse template (with Java 1.7 and Tomcat already set up) then proceed.
+
+Import selected projects (that have had the eclipse goal executed) into the workspace.
+
+In the case of the SampleApplication which is a JSF project, we have to set up some facets as follows (project properties / project facets):
+java (should already be selected)
+Dynamic Web Module
+JSF - configure further and add Mojarra
+
+Once this is all done, test by selecting a entry webpage like login.xhtml -> run as -> run on server...
+
+All going well, this should open up within eclipse displaying your apps page.
+
+----
+
+Servlet applications are a little easier, simply add the Dynamic Web Module facet and test the same way by selecting a web page to execute.
