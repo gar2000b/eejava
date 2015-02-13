@@ -1,9 +1,9 @@
-package com.onlineinteract.factory;
+package com.onlineinteract.factorypattern.factory;
 
-import com.onlineinteract.factory.model.Circle;
-import com.onlineinteract.factory.model.Rectangle;
-import com.onlineinteract.factory.model.Square;
-import com.onlineinteract.factory.model.api.Shape;
+import com.onlineinteract.factorypattern.model.Circle;
+import com.onlineinteract.factorypattern.model.Rectangle;
+import com.onlineinteract.factorypattern.model.Square;
+import com.onlineinteract.factorypattern.model.api.Shape;
 
 public class ShapeFactory {
 

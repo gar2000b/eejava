@@ -1,8 +1,9 @@
-package com.onlineinteract.factory.app;
+package com.onlineinteract.factorypattern;
 
-import com.onlineinteract.factory.ShapeFactory;
-import com.onlineinteract.factory.model.api.Shape;
-import static com.onlineinteract.factory.ShapeFactory.*;
+import com.onlineinteract.factorypattern.factory.ShapeFactory;
+import com.onlineinteract.factorypattern.model.api.Shape;
+
+import static com.onlineinteract.factorypattern.factory.ShapeFactory.*;
 
 public class FactoryPatternDemo {
 

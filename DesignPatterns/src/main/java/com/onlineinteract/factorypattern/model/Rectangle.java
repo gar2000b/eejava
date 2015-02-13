@@ -1,6 +1,6 @@
-package com.onlineinteract.factory.model;
+package com.onlineinteract.factorypattern.model;
 
-import com.onlineinteract.factory.model.api.Shape;
+import com.onlineinteract.factorypattern.model.api.Shape;
 
 public class Rectangle implements Shape{
 	
