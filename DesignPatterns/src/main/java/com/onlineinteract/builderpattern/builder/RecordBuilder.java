@@ -12,12 +12,10 @@ public class RecordBuilder {
 	private String recordID;
 	private String nino;
 	private String name;
-	String recordString;
 
 	private static final Pattern RECORD = compile("^(.*),(.*),(.*)$");
 
 	public Record generateRecord(String recordString) throws Exception {
-		this.recordString = recordString;
 		Matcher randomMatcher = RECORD.matcher(recordString);
 
 		if (randomMatcher.matches()) {
