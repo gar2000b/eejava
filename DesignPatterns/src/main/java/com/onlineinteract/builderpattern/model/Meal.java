@@ -1,7 +1,9 @@
-package com.onlineinteract.builderpattern;
+package com.onlineinteract.builderpattern.model;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.onlineinteract.builderpattern.model.api.Item;
 
 public class Meal {
 	private List<Item> items = new ArrayList<Item>();

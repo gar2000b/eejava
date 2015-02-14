@@ -1,5 +1,8 @@
 package com.onlineinteract.builderpattern;
 
+import com.onlineinteract.builderpattern.builder.MealBuilder;
+import com.onlineinteract.builderpattern.model.Meal;
+
 public class BuilderPatternDemo {
 	public static void main(String[] args) {
 		MealBuilder mealBuilder = new MealBuilder();

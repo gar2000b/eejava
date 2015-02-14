@@ -1,4 +1,6 @@
-package com.onlineinteract.builderpattern;
+package com.onlineinteract.builderpattern.model;
+
+import com.onlineinteract.builderpattern.model.api.ColdDrink;
 
 public class Pepsi extends ColdDrink {
 

@@ -1,4 +1,6 @@
-package com.onlineinteract.builderpattern;
+package com.onlineinteract.builderpattern.model.api;
+
+import com.onlineinteract.builderpattern.model.Wrapper;
 
 public abstract class Burger implements Item {
 	@Override

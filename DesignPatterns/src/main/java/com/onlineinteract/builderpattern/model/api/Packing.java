@@ -1,4 +1,4 @@
-package com.onlineinteract.builderpattern;
+package com.onlineinteract.builderpattern.model.api;
 
 public interface Packing {
 	public String pack();
