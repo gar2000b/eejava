@@ -1,4 +1,9 @@
-package com.onlineinteract.adapterpattern;
+package com.onlineinteract.adapterpattern.adapters;
+
+import com.onlineinteract.adapterpattern.mediaplayers.Mp4Player;
+import com.onlineinteract.adapterpattern.mediaplayers.VlcPlayer;
+import com.onlineinteract.adapterpattern.mediaplayers.api.AdvancedMediaPlayer;
+import com.onlineinteract.adapterpattern.mediaplayers.api.MediaPlayer;
 
 public class MediaAdapter implements MediaPlayer {
 

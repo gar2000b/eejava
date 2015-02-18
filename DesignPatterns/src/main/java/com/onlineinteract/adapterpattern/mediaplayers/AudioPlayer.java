@@ -1,4 +1,7 @@
-package com.onlineinteract.adapterpattern;
+package com.onlineinteract.adapterpattern.mediaplayers;
+
+import com.onlineinteract.adapterpattern.adapters.MediaAdapter;
+import com.onlineinteract.adapterpattern.mediaplayers.api.MediaPlayer;
 
 public class AudioPlayer implements MediaPlayer {
 

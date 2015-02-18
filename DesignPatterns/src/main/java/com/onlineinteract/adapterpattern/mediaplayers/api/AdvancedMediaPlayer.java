@@ -1,4 +1,4 @@
-package com.onlineinteract.adapterpattern;
+package com.onlineinteract.adapterpattern.mediaplayers.api;
 
 public interface AdvancedMediaPlayer {
 	public void playVlc(String fileName);

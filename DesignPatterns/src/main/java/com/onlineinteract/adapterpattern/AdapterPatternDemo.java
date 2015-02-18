@@ -1,5 +1,7 @@
 package com.onlineinteract.adapterpattern;
 
+import com.onlineinteract.adapterpattern.mediaplayers.AudioPlayer;
+
 public class AdapterPatternDemo {
 	public static void main(String[] args) {
 		AudioPlayer audioPlayer = new AudioPlayer();
