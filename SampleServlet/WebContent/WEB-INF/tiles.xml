@@ -66,4 +66,13 @@
 		</put-list-attribute>
 	</definition>
 
+	<definition name="myapp.lists.extended" extends="myapp.lists">
+		<put-attribute name="title" value="Tiles tutorial homepage" />
+		<put-list-attribute name="items" inherit="true">
+			<add-attribute value="/tiles/credits.jsp" />
+			<add-attribute value="/tiles/credits.jsp" />
+			<add-attribute value="/tiles/credits.jsp" />
+		</put-list-attribute>
+	</definition>
+
 </tiles-definitions>
