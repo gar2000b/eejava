@@ -16,5 +16,8 @@
 			<td colspan="2"><tiles:insertAttribute name="footer" /></td>
 		</tr>
 	</table>
+	<br />
+	<p>Now we wish to render a list:</p>
+	
 </body>
 </html>

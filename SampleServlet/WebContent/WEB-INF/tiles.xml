@@ -23,19 +23,47 @@
 		/> </definition> </put-attribute> <put-attribute name="footer" value="/tiles/credits.jsp" 
 		/> </definition> -->
 
-	<definition name="myapp.homepage" template="/layouts/classic.jsp">
-		<put-attribute name="title" value="Tiles tutorial homepage" />
+	<!-- <definition name="myapp.homepage" template="/layouts/classic.jsp"> 
+		<put-attribute name="title" value="Tiles tutorial homepage" /> <put-attribute 
+		name="header" value="/tiles/banner.jsp" /> <put-attribute name="menu" value="/tiles/common_menu.jsp" 
+		/> <put-attribute name="body" value="/layouts/three_rows.jsp" /> <put-attribute 
+		name="footer" value="/tiles/credits.jsp" /> <put-attribute name="one" value="/tiles/headlines.jsp" 
+		cascade="true" /> <put-attribute name="two" value="/tiles/topics.jsp" cascade="true" 
+		/> <put-attribute name="three" value="/tiles/comments.jsp" cascade="true" 
+		/> </definition> -->
+
+	<definition name="myapp.homepage.body" template="/layouts/three_rows.jsp">
+		<put-attribute name="one" value="/tiles/headlines.jsp" />
+		<put-attribute name="two" value="/tiles/topics.jsp" />
+		<put-attribute name="three" value="/tiles/comments.jsp" />
+	</definition>
+
+	<definition name="myapp.page.common" template="/layouts/classic.jsp">
 		<put-attribute name="header" value="/tiles/banner.jsp" />
 		<put-attribute name="menu" value="/tiles/common_menu.jsp" />
-		<put-attribute name="body" value="/layouts/three_rows.jsp" />
 		<put-attribute name="footer" value="/tiles/credits.jsp" />
+	</definition>
 
-		<put-attribute name="one" value="/tiles/headlines.jsp"
-			cascade="true" />
-		<put-attribute name="two" value="/tiles/topics.jsp"
-			cascade="true" />
-		<put-attribute name="three" value="/tiles/comments.jsp"
-			cascade="true" />
+	<definition name="myapp.homepage" extends="myapp.page.common">
+		<put-attribute name="title" value="Tiles tutorial homepage" />
+		<put-attribute name="body" value="myapp.homepage.body" />
+	</definition>
+
+	<!-- Can also override templates and attributes - https://tiles.apache.org/framework/tutorial/advanced/nesting-extending.html -->
+
+	<definition name="myapp.lists" template="/layouts/variable_rows.jsp">
+		<put-attribute name="title" value="Tiles tutorial homepage" />
+		<put-list-attribute name="items">
+			<add-attribute value="/tiles/banner.jsp" />
+			<add-attribute value="/tiles/common_menu.jsp" />
+			<add-attribute value="/tiles/credits.jsp" />
+			<add-attribute value="/tiles/banner.jsp" />
+			<add-attribute value="/tiles/common_menu.jsp" />
+			<add-attribute value="/tiles/credits.jsp" />
+			<add-attribute value="/tiles/banner.jsp" />
+			<add-attribute value="/tiles/common_menu.jsp" />
+			<add-attribute value="/tiles/credits.jsp" />
+		</put-list-attribute>
 	</definition>
 
 </tiles-definitions>
