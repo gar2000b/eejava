@@ -17,7 +17,6 @@
 		</tr>
 	</table>
 	<br />
-	<p>Now we wish to render a list:</p>
-	
+	<a href="../index.html">Home</a>
 </body>
 </html>
