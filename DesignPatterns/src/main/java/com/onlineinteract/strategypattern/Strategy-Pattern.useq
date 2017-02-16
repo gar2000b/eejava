@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.13" icons="true">  
+  <object id="1" language="java" name="com.onlineinteract.strategypattern.StrategyPatternDemo" project="design-patterns" 
+    file="/design-patterns/src/main/java/com/onlineinteract/strategypattern/StrategyPatternDemo.java" binary="false" 
+    label="strategyPatternDemo" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="149" y="0"/>    
+    <execution id="2">      
+      <position height="381" width="150" x="5" y="99"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="com.onlineinteract.strategypattern.Dog" project="design-patterns" 
+    file="/design-patterns/src/main/java/com/onlineinteract/strategypattern/Dog.java" binary="false" label="dog" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="427" y="0"/>    
+    <execution id="4">      
+      <position height="63" width="150" x="159" y="120"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="63" width="150" x="159" y="313"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="com.onlineinteract.strategypattern.Bird" project="design-patterns" 
+    file="/design-patterns/src/main/java/com/onlineinteract/strategypattern/Bird.java" binary="false" label="bird" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="334" y="0"/>    
+    <execution id="6">      
+      <position height="63" width="150" x="313" y="225"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="63" width="150" x="313" y="396"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="com.onlineinteract.strategypattern.CantFly" project="design-patterns" 
+    file="/design-patterns/src/main/java/com/onlineinteract/strategypattern/CantFly.java" binary="false" label="cantFly" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="895" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="150" x="467" y="141"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="150" x="467" y="334"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="com.onlineinteract.strategypattern.ItFlys" project="design-patterns" 
+    file="/design-patterns/src/main/java/com/onlineinteract/strategypattern/ItFlys.java" binary="false" label="itFlys" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="771" y="0"/>    
+    <execution id="18">      
+      <position height="21" width="150" x="621" y="246"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="150" x="621" y="417"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Dog()" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="Bird()" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="tryToFly():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="tryToFly():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="CantFly()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="fly():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="17" operation="ItFlys()" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="fly():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>
+</sequence-diagram>
