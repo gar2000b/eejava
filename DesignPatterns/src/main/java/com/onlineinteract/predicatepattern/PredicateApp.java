@@ -4,7 +4,7 @@ import com.onlineinteract.predicatepattern.rules.InputTransfer;
 import com.onlineinteract.predicatepattern.rules.RulesEngine;
 import com.onlineinteract.predicatepattern.rules.RulesEngine.Cohort;
 
-public class FakeApp {
+public class PredicateApp {
 	public static void main(String[] args) {
 		InputTransfer inputTransfer = new InputTransfer();
 		inputTransfer.setA("value 1");
