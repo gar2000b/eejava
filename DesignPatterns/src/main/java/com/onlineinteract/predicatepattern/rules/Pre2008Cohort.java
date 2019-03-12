@@ -13,7 +13,7 @@ public class Pre2008Cohort implements Predicate<InputTransfer> {
 	@Override
 	public boolean evaluate(InputTransfer inputTransfer) {
 		if (inputTransfer.getA().equals(inputTransfer.getB())) {
-			if (!inputTransfer.getC().equals(inputTransfer.getC()))
+			if (!inputTransfer.getC().equals(inputTransfer.getD()))
 				return true;
 			if (!inputTransfer.getC().equals(inputTransfer.getE()))
 				return true;
